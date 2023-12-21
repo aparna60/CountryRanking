@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  countryranking:
+    image: ${DOCKER_REGISTRY-}countryranking
+    build:
+      context: .
+      dockerfile: CountryRanking/Dockerfile
